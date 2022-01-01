@@ -1,0 +1,307 @@
+.dashboard_ellipse {
+  position: absolute;
+  right: 0;
+  width: 3rem;
+}
+.profile {
+  background: rgba(237, 237, 237, 0.56);
+  padding: 1.5rem;
+}
+.user_avatar {
+  border-radius: 50%;
+  width: 3.7rem;
+  padding-bottom: 0.6rem;
+}
+.user_name {
+  font-weight: 600;
+  line-height: 1.2rem;
+}
+.last_login {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.34);
+}
+.action_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.send_btn,
+.deposit_btn,
+.bills_btn {
+  border: none;
+  width: 30%;
+  border-radius: 18px;
+  padding: 0.8rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.send_btn {
+  background: #2f4bde;
+}
+.send_btn:hover {
+  background: #13247c;
+}
+.deposit_btn {
+  background: #f1c52f;
+}
+.deposit_btn:hover {
+  background: #a17d05;
+}
+.bills_btn {
+  background: #007934;
+}
+.bills_btn:hover {
+  background: #01441f;
+}
+
+/* Recent transaction section */
+.transaction-section {
+  padding: 1rem;
+}
+.section_title {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.transactions,
+.targets {
+  display: flex;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+.transaction_icon {
+  width: 4rem;
+  margin-right: 1rem;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.transactions span {
+  margin-left: auto;
+}
+.transaction_type {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  color: rgba(0, 0, 0, 0.57);
+}
+.ricipient {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.transfer {
+  color: #51e72bcf;
+}
+.subscription {
+  color: #e90505;
+}
+/* savings target section */
+.savings_target-section {
+  margin: 1rem;
+  margin-bottom: 30%;
+}
+.targets div,
+.targets progress {
+  width: 100%;
+}
+.targets progress {
+  height: 0.3rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.targets progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  overflow: hidden;
+}
+.targets progress[value]::-webkit-progress-value {
+  background-color: #51e72b;
+}
+.targets div section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.targets span {
+  font-size: 0.7rem;
+  color: #2f4bde;
+}
+/* dashboard nav section */
+.navigation_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: 0.3s ease;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.navItem svg {
+  font-size: 2rem;
+  fill: #455a64;
+}
+.svg :active,
+.svg :focus,
+.svg :hover {
+  fill: #2f4bde;
+}
+#qr_scanner svg {
+  fill: #fff;
+  font-size: 2.2rem;
+}
+#qr_scanner:hover,
+#qr_scanner:focus,
+#qr_scanner:active {
+  background-color: #2f4bde;
+}
+.navItem:nth-child(2) {
+  background-color: #455a64;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+}
+.navigation_section,
+#logout_nav {
+  box-shadow: 1px -4px 15px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -4px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -4px 15px -7px rgba(0, 0, 0, 0.75);
+}
+/* logout nav section */
+#logout_nav {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem;
+  left: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  transition: 0.3s ease;
+  color: #455a64a1;
+}
+#logout_nav ul {
+  list-style: none;
+}
+#logout_nav li {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+#logout_nav div {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
+  clear: both;
+}
+#logout_nav svg {
+  fill: #455a64a1;
+  font-size: 1.5rem;
+}
+#logout_nav div:hover {
+  background: #2f4bde;
+  color: #fff;
+}
+#logout_nav div:hover svg {
+  fill: #fff;
+  font-size: 2.5rem;
+}
+#logout_nav .remove_profile-nav {
+  background: #2f4bde;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  float: right;
+  margin: 0.5rem;
+}
+.show_profile-menu {
+  bottom: 0;
+}
+.remove_profile-menu {
+  bottom: -100vh;
+}
+/* Qr scanner section */
+.qrscanner {
+  margin-bottom: 7rem;
+}
+.back_to-home {
+  display: inline-block;
+  color: #000;
+}
+.qr_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.2rem 3.5rem 0 1.5rem;
+}
+.qr_nav p {
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.back_to-home svg {
+  font-size: 2rem;
+}
+.pay {
+  font-size: 1.3rem;
+}
+.receiver_container {
+  position: relative;
+  margin: 1rem 1.5rem;
+}
+.receiver {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.receiver div {
+  display: flex;
+  align-items: center;
+}
+.receiver img {
+  width: 4.5rem;
+  margin-right: 1rem;
+}
+.add_recipient {
+  color: #2f4bde85;
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+}
+.scanner_container {
+  margin: 1rem 1.5rem;
+}
+.scanner {
+  background-color: #000;
+  height: 24rem;
+
+  display: flex;
+  border-radius: 1.5rem;
+}
+.scanner img {
+  width: 12rem;
+  margin: auto;
+}
+.scanner_text {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+}
+.scanner_text span {
+  color: #2f4bde;
+  font-weight: 600;
+}
+.scanner_container svg {
+  display: block;
+  margin: 0 auto;
+  font-size: 3rem;
+  margin-top: 2rem;
+  fill: #2f4bde;
+}
