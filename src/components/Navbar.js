@@ -3,7 +3,7 @@ import { MdQrCodeScanner } from 'react-icons/md';
 import { MdHome } from 'react-icons/md';
 import { IoMdPerson } from 'react-icons/io';
 import '../css/dashboard.css';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import LogoutNav from './LogoutNAv';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
